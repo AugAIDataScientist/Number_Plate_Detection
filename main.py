@@ -87,7 +87,7 @@ with st.sidebar:
 @st.cache_resource
 def init_mongodb():
     try:
-        MONGODB_URL="mongodb+srv://asadullahmasood1005:o6JMETlQXlGKy8T5@cluster0.nio7sh8.mongodb.net/"
+        MONGO_URL="mongodb+srv://asadullahmasood1005:o6JMETlQXlGKy8T5@cluster0.nio7sh8.mongodb.net/"
         client = MongoClient(MONGO_URI)
         db = client["car_plate_db"]
         collection = db["plate_records"]
